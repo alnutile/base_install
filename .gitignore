@@ -1,0 +1,11 @@
+.idea
+.phpcomplete_extended
+.tags
+.tags_sorted_by_file
+/bin
+/bower_components
+/vendor
+composer.phar
+.env.*
+.DS_Store
+Thumbs.db
