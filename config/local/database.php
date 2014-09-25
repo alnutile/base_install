@@ -17,8 +17,15 @@ return [
 	| choice installed on your machine before you begin development.
 	|
 	*/
+    'default' => 'sqlite',
 
 	'connections' => [
+
+        'sqlite' => [
+            'driver'   => 'sqlite',
+            'database' => storage_path().'/local.sqlite',
+            'prefix'   => '',
+        ],
 
 		'mysql' => [
 			'driver'    => 'mysql',

@@ -1,0 +1,39 @@
+default:
+  paths:
+    features:  features
+    bootstrap: features/bootstrap
+  context:
+    parameters:
+      base_url: http://behat.dev
+  formatter:
+    name: pretty
+  extensions:
+    Behat\MinkExtension\Extension:
+      goutte: null
+      selenium2:
+        wd_host: "http://192.168.33.1:4444/wd/hub"
+      base_url: 'http://behat.dev/'
+      browser_name: safari
+
+angular:
+  context:
+    parameters:
+      base_url: http://behat.dev:8000
+  extensions:
+    Behat\MinkExtension\Extension:
+      selenium2: ~
+      base_url: 'http://behat.dev:8000'
+      browser_name: safari
+
+remote:
+  extensions:
+    Behat\MinkExtension\Extension:
+      base_url: 'http://behat_laravel.behateditor.io'
+
+annotations:
+  paths:
+    features: features/annotations
+
+closures:
+  paths:
+    features: features/closures

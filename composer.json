@@ -5,11 +5,36 @@
 	"license": "MIT",
 	"type": "project",
 	"require": {
-		"laravel/framework": "~5.0"
+		"laravel/framework": "~5.0",
+        "illuminate/html": "5.0.*@dev"
 	},
-	"require-dev": {
-		"phpunit/phpunit": "~4.0"
-	},
+    "require-dev": {
+        "phpunit/phpunit": "~4.0",
+        "mockery/mockery": "*@dev",
+        "behat/mink-zombie-driver": "*",
+        "behat/mink": "*",
+        "behat/mink-goutte-driver": "*",
+        "behat/mink-selenium-driver": "*",
+        "fzaninotto/faker": "*",
+        "behat/mink-selenium2-driver": "*",
+        "behat/mink-extension": "dev-CommandTimeout",
+        "behat/mink-sahi-driver": "*",
+        "guzzlehttp/guzzle": "4.*",
+        "pda/pheanstalk": "~3.0",
+        "knplabs/github-api": "1.2.1",
+        "way/generators": "~3.0",
+        "itsgoingd/clockwork": "dev-master"
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/alnutile/MinkExtension.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/KnpLabs/php-github-api"
+        }
+    ],
 	"autoload": {
 		"classmap": [
 			"database",
