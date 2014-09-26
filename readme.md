@@ -2,6 +2,10 @@
 
 Style Guides are [here](https://github.com/alnutile/team_style_guides)
 
+## Setting your Laravel psr-4 namespace
+
+See [Namespacing Your Application](http://laravel.com/docs/master/structure#namespacing-your-application)
+
 ## DB
 
 ~~~
@@ -26,3 +30,11 @@ Auto set Sass file to css
 ## Example API?
 
 See tests/behat/base_install.feature
+
+## Authentication
+
+The base of this is /auth/login see routes.php for example
+
+## IDE Helper
+
+note _ide_helper.php file for Pstorm there is one for sublime as well.

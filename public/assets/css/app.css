@@ -1,0 +1,160 @@
+.ace_editor { height: 600px; }
+
+body {
+    font-size: 13px !important; /* the first one :( */
+    margin: 100px 0px 0px 0px !important;
+}
+
+div.top {
+    margin-top: 50px;
+}
+
+.test-ui ul.nav {
+    float: left;
+    width: 158px;
+    padding: 0px;
+    margin: 0px;
+    background-color: #f5f5f5;
+}
+
+.test-ui li.active {
+    background-color: white;
+}
+
+.test-ui .region-content ul {
+    margin: 0px;
+}
+
+.test-ui div.tab-content {
+    float: right;
+    width: 64%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.panel-heading h4 {
+    font-size: 13px;
+}
+
+.animate-show {
+    -webkit-transition:all linear 0.5s;
+    transition:all linear 0.5s;
+    line-height:20px;
+    opacity:1;
+    background:white;
+}
+
+.animate-show.ng-hide-add,
+.animate-show.ng-hide-remove {
+    display:block!important;
+}
+
+.animate-show.ng-hide {
+    line-height:0;
+    opacity:0;
+    padding:0 10px;
+}
+
+.ng-table {
+    border: 1px solid #000;
+}
+
+accordion .panel-heading {
+    cursor: pointer;
+}
+
+.tagarea {
+    height: 20px;
+    margin-left: -40px;
+    margin-bottom: 30px;
+}
+
+.tagarea .tag_wrapper {
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 23px;
+    margin-top: 10px;
+    width: 400px;
+}
+
+.tagarea .container-fluid {
+    display: block;
+    float: left;
+    margin-top: 7px;
+}
+
+.decipher-tags-taglist {
+    display: block;
+    float: left;
+}
+
+.decipher-tags {
+    min-height: 34px;
+    border: 1px solid #ccc;
+    margin: 0px 10px;
+    padding: 0px 5px 5px 5px;
+}
+
+input.decipher-tags-input {
+    border: 1px solid #dcdcdc;
+}
+
+.tag-label {
+    padding: 20px;
+}
+
+.end-info {
+    margin-left: 0px;
+}
+
+div.row.tags {
+    margin-left: 18px;
+    margin-top: 10px;
+}
+
+.automated {
+    border: 1px solid #C7C7D1;
+    padding: 10px;
+}
+
+.automated legend {
+    width:inherit; /* Or auto */
+    padding:0 10px; /* To give a bit of padding on the left and right */
+    border-bottom:none;
+}
+
+ul.charts-key {
+    margin-left: 10px;
+}
+
+li.passing {
+    background-color: #F38630;
+    padding: 3px;
+    width: 60px;
+    color: white;
+}
+
+li.failing {
+    background-color: #E0E4CC;
+    padding: 3px;
+    width: 60px;
+    color: white;
+}
+
+.help-inline { margin-bottom: 9px; }
+div.danger { background-color: #f2dede; padding: 4px;}
+.success { border: dotted  green 1px }
+
+ul.breadcrumb li.last {
+    content: non;
+}
+
+.dash-chart canvas {
+    margin-left: -30%;
+}
+
+.navbar {
+    min-height: 33px;
+    padding-top: 6px;
+}
