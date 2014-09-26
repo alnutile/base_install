@@ -60,10 +60,16 @@
     <script src="/bower_components/angular-sanitize/angular-sanitize.min.js"></script>
 
     <!-- to be moved into bower -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/jquery-ui/jquery-ui.js"></script>
     <script src="/bower_components/noty/js/noty/packaged/jquery.noty.packaged.min.js"></script>
     <!-- to be moved into bower -->
 
     <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/routes-config.js"></script>
+    <script src="/assets/js/dashboard/service.js"></script>
+    <script src="/assets/js/dashboard/dashCtrl.js"></script>
+
 
 </body>
 </html>
