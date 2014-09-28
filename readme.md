@@ -1,5 +1,16 @@
 ## Base install with style guides in mind
 
+## Quick start
+
+~~~
+composer install
+bower install
+touch storage/local.sqlite
+php artisan migrate
+php artisan db:seed
+chrome http://base_app.dev:8000/auth/login
+~~~~
+
 Style Guides are [here](https://github.com/alnutile/team_style_guides)
 
 ## Setting your Laravel psr-4 namespace

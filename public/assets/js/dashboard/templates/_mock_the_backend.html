@@ -8,8 +8,24 @@
                     With that we can set a "run" area to intercept or passThrough
                     a request.
                     For example the table below is data from a mock json response.
-                    {{ vm.data }}
+
+                    <input type="text" ng-model="search" class="form-control" placeholder="example filter">
+                    <table class="table table-stripped table-hover">
+                        <thead>
+                            <th>Name</th>
+                            <th>Email</th>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="item in vm.model | filter:search">
+                                <td>{{item.name.first}} {{item.name.last}}</td>
+                                <td>{{item.email}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </p>
+                <hr>
+                <h3>Good way to see data in json</h3>
+                <pre>{{ vm.model | json }}</pre>
             </div>
         </div>
     </div>

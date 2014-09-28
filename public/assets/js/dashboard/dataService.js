@@ -1,6 +1,5 @@
-'use strict';
 (function(){
-
+    'use strict';
     /**
      * https://github.com/johnpapa/angularjs-styleguide#data-services
      * @param Restangular

@@ -52,6 +52,11 @@
         </div>
     </footer>
 
+    <!-- to be moved into bower -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/jquery-ui/jquery-ui.js"></script>
+    <script src="/bower_components/noty/js/noty/packaged/jquery.noty.packaged.min.js"></script>
+
     <script src="/bower_components/angular/angular.js"></script>
     <script src="/bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
     <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
@@ -64,13 +69,11 @@
     <script src="/bower_components/restangular/dist/restangular.min.js"></script>
 
     <!-- to be moved into bower -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/jquery-ui/jquery-ui.js"></script>
-    <script src="/bower_components/noty/js/noty/packaged/jquery.noty.packaged.min.js"></script>
-    <!-- to be moved into bower -->
 
     <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/generated_json.js"></script>
     <script src="/assets/js/routes-config.js"></script>
+    <script src="/assets/js/shared/noty.js"></script>
     <script src="/assets/js/dashboard/dataService.js"></script>
     <script src="/assets/js/dashboard/dashCtrl.js"></script>
 
