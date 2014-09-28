@@ -1,5 +1,9 @@
 ## Base install with style guides in mind
 
+After you set this up visit your site at http://base_app.dev:8000 and login to see some more links and examples.
+
+admin@foo / foo
+
 ## Quick start
 
 ~~~
