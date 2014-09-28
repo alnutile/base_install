@@ -1,6 +1,10 @@
 'use strict';
 (function(){
     angular
-        .module('app', ['ngRoute']);
+        .module('app', [
+            'ngRoute',
+            'ngMockE2E',
+            'restangular',
+            'ui.bootstrap']);
 
 })();

@@ -1,11 +1,38 @@
 <div class="top container">
     <span ng-include="'/assets/js/shared/templates/nav.html'"></span>
     <div class="row clearfix">
-        <div class="col-md-8 column">
+        <div class="col-md-12 column">
             <h2>Welcome</h2>
-            <p>
-                ...
-            </p>
+            <div class="row">
+                <tabset>
+                    <tab>
+                        <tab-heading>
+                            <i class='glyphicon glyphicon-fire'></i>&nbsp;Angular</tab-heading>
+                        </tab-heading>
+                        <div class="col-lg-12">
+                            <ng-include src="'/assets/js/dashboard/templates/_angular.html'"> </ng-include>
+                        </div>
+                    </tab>
+
+                    <tab>
+                        <tab-heading>
+                            <i class='glyphicon glyphicon-wrench'></i>&nbsp;PHP</tab-heading>
+                        </tab-heading>
+                        <div class="col-lg-12">
+                            <ng-include src="'/assets/js/dashboard/templates/_php.html'"> </ng-include>
+                        </div>
+                    </tab>
+
+                    <tab>
+                        <tab-heading>
+                            <i class='glyphicon glyphicon-retweet'></i>&nbsp;Mocked Backend = Fast Prototyping</tab-heading>
+                        </tab-heading>
+                        <div class="col-lg-12">
+                            <ng-include src="'/assets/js/dashboard/templates/_mock_the_backend.html'"> </ng-include>
+                        </div>
+                    </tab>
+                </tabset>
+            </div>
         </div>
     </div>
 </div>
