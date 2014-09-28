@@ -74,6 +74,7 @@
     <script src="/assets/js/generated_json.js"></script>
     <script src="/assets/js/routes-config.js"></script>
     <script src="/assets/js/shared/noty.js"></script>
+    <script src="/assets/js/users/usersService.js"></script>
     <script src="/assets/js/dashboard/dataService.js"></script>
     <script src="/assets/js/dashboard/dashCtrl.js"></script>
 

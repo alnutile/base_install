@@ -1,0 +1,43 @@
+<div class="panel panel-default">
+    <div class="panel panel-body">
+        <div class="panel panel-default">
+            <div class="panel panel-body">
+                <p>
+                    This is one of the hardest directives
+                    See http://angular-ui.github.io/bootstrap/ modals for more.
+                    This shows how I work it into the new style guide
+
+                    <input type="text" ng-model="search" class="form-control" placeholder="example filter">
+                    <table class="table table-stripped table-hover">
+                        <thead>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>See Modal</th>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="item in vm.model | filter:search">
+                                <td>{{item.name.first}} {{item.name.last}}</td>
+                                <td>{{item.email}}</td>
+                                <td><a href="" ng-click="vm.seeModal(item)"><i class="glyphicon glyphicon-eye-open">&nbsp</i></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </p>
+                <hr>
+                <div class="container">
+                    <div class="row clearfix">
+                        <div class="col-lg-5 column">
+
+                        </div>
+                        <div class="col-lg-5 column">
+                            <h3>We will update this local scope when we press ok on the modal</h3>
+                                <p>Empty now but click Modal and Ok to pass back to this scope</p>
+                            <pre>{{ vm.updatedItem | json }}</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>

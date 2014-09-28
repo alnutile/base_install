@@ -6,26 +6,50 @@
                     This examples shows
                     <ol>
                         <li>Getting Data from api</li>
-                        <li>PHP Controller -> Service -> Repo Design Pattern</li>
-                        <li>PHP / Angular use of Pager</li>
+                        <li>PHP Controller -> Service -> Repo Design Pattern and Transformer</li>
+                        <li>PHP / Angular use of Pager (coming soon)</li>
                     </ol>
                     <input type="text" ng-model="search" class="form-control" placeholder="example filter">
                     <table class="table table-stripped table-hover">
                         <thead>
-                            <th>Name</th>
+                            <th>Id</th>
                             <th>Email</th>
                         </thead>
                         <tbody>
-                            <tr ng-repeat="item in vm.model | filter:search">
-                                <td>{{item.name.first}} {{item.name.last}}</td>
-                                <td>{{item.email}}</td>
+                            <tr ng-repeat="item in vm.users | filter:search">
+                                <td>{{item.id}}</td>
+                                <td>{{item.mail}}</td>
                             </tr>
                         </tbody>
                     </table>
                 </p>
                 <hr>
-                <h3>Good way to see data in json</h3>
-                <pre>{{ vm.model | json }}</pre>
+                <div class="container">
+                    <div class="row clearfix">
+                        <div class="col-lg-5 column">
+                            <h3>Good way to see data in json</h3>
+                            <pre>{{ vm.users | json }}</pre>
+                        </div>
+                        <div class="col-lg-5 column">
+                            <h3>Checkout the PHP Pattern</h3>
+                            <p>
+                                From app/Http/routes.php you see the Resource Method used and Route::groups.
+                                <br>
+                                The Controller was made with a simple command.
+                            </p>
+                            <pre>php artisan make:controller UsersController</pre>
+                            <p>
+                                There are notes in there under the index method to guide you through the communications and setup of
+                                <ul>
+                                    <li>ResponseHelper</li>
+                                    <li>Service and Service Provider</li>
+                                    <li>Repository</li>
+                                    <li>Transformer Library</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

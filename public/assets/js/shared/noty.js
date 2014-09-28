@@ -1,6 +1,12 @@
 'use strict';
 (function(){
 
+    /**
+     * See their docs here http://ned.im/noty/
+     *
+     * @returns {Function}
+     * @constructor
+     */
     function Noty() {
         return function(text, type, dismiss, killer, timeout) {
             var dismiss = dismiss || false;

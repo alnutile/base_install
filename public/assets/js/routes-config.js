@@ -44,6 +44,7 @@
          * the real backend.
          */
         $httpBackend.whenGET(/^\/assets\//).passThrough();
+        $httpBackend.whenGET(/^\/api\/v1\/users/).passThrough();
 
     }
 
