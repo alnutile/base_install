@@ -4,6 +4,9 @@ After you set this up visit your site at http://base_app.dev:8000 and login to s
 
 admin@foo / foo
 
+Also note issues are in https://github.com/alnutile/base_install/issues
+
+
 ## Quick start
 
 ~~~
@@ -14,6 +17,7 @@ php artisan migrate
 php artisan db:seed
 chrome http://base_app.dev:8000/auth/login
 ~~~~
+
 This will lead you to  a bunch of links and examples.
 
 ### Also
