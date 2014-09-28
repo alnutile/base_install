@@ -10,12 +10,37 @@ php artisan migrate
 php artisan db:seed
 chrome http://base_app.dev:8000/auth/login
 ~~~~
+This will lead you to  a bunch of links and examples.
+
+### Also
+
+The setup script will add a new git remote called base_app. So do not remove the .git/config
+but reset the origin to the project you are working on.
+
+~~~
+git remote rm origin
+git remote add origin git@github.com:alnutile/some_repo.git
+~~~
+
+This way running
+~~~
+git pull base_app master
+~~~
+
+Will bring in any fixes to the base app to your local install as needed.
 
 Style Guides are [here](https://github.com/alnutile/team_style_guides)
 
 ## Setting your Laravel psr-4 namespace
 
 See [Namespacing Your Application](http://laravel.com/docs/master/structure#namespacing-your-application)
+
+
+## Issue Queue
+
+Want to help? https://github.com/alnutile/base_app/issues
+
+
 
 ## DB
 

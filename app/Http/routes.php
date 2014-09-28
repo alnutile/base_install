@@ -8,6 +8,14 @@ Blade::setRawTags('{{', '}}');
 Route::controller('auth', 'Auth\AuthController');
 Route::controller('password', 'Auth\RemindersController');
 
+/**
+ * Setup our grouping of api/v1 functions
+ * Also note before = auth
+ */
+Route::group(['prefix' => '/api/v1', 'before' => 'auth'], function(){
+    Route::resource('users', 'UsersController');
+});
+
 Route::get('/app', ['before' => 'auth', function()
 {
     return View::make('layouts.main');
