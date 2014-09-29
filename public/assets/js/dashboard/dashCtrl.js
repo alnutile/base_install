@@ -9,7 +9,6 @@
      */
     function UserModalCtrl($modalInstance, item) {
         var vm = this;
-        console.log(item);
         vm.item     = item;
         vm.ok       = ok;
         vm.cancel   = cancel;
@@ -36,6 +35,7 @@
         vm.getUsersApi      = getUsersApi;
         vm.getUsers         = getUsers;
         vm.seeModal         = seeModal;
+        vm.previousClass    = previousClass;
 
         activate();
 
@@ -82,12 +82,15 @@
 
         /**
          * This is the promise for getting users
+         * This is a non mocked request
          */
         function getUsersApi() {
             return vm.UsersService.index().then(function(data){
-                vm.rest2     = data;
+                vm.rest2    = data;
                 vm.users    = vm.rest2.data;
                 vm.message  = vm.rest2.message;
+                vm.pager    = vm.rest2.data.pagination;
+                console.log(vm.pager);
             });
         }
 
@@ -115,6 +118,14 @@
             }, function(){
                 vm.Noty("You canceled the modal :(", "success", false, true, 3000);
             });
+        }
+
+        function previousClass(current_class) {
+            if(current_class == 1)
+            {
+                return 'disabled';
+            }
+            return false;
         }
     }
 

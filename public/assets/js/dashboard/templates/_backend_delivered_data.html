@@ -7,7 +7,7 @@
                     <ol>
                         <li>Getting Data from api</li>
                         <li>PHP Controller -> Service -> Repo Design Pattern and Transformer</li>
-                        <li>PHP / Angular use of Pager (coming soon)</li>
+                        <li>PHP / Angular use of Pager (at 5 each call)</li>
                     </ol>
                     <input type="text" ng-model="search" class="form-control" placeholder="example filter">
                     <table class="table table-stripped table-hover">
@@ -22,6 +22,18 @@
                             </tr>
                         </tbody>
                     </table>
+
+                    <ul class="pager">
+                        <li class="previous" ng-class="vm.previousClass(vm.pager.current_page)"><a href="#">
+                            Previous</a>
+                        </li>
+                        <li> | <strong>Total: {{ vm.pager.total }} </strong>  | </li>
+                        <li class="next">
+                            <a href="#"
+                               class="next"
+                               ng-class="{disabled: vm.pager.last_page != vm.pager.current_page}">Next</a>
+                        </li>
+                    </ul>
                 </p>
                 <hr>
                 <div class="container">

@@ -16,6 +16,6 @@ class UserRepository {
 
     public function all()
     {
-        return $this->user->all();
+        return $this->user->paginate(5);
     }
 } 
